@@ -4,8 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import java.lang.Exception
-import kotlin.system.measureTimeMillis
 
 class SplashScreenActivity : AppCompatActivity() {
     private val splashTime = 2000L
@@ -17,13 +15,19 @@ class SplashScreenActivity : AppCompatActivity() {
 
         myhandler = Handler()
         myhandler.postDelayed({
-            goToMainActivity()
+            //goToMainActivity()
+            goToTestActivity()
         },splashTime)
     }
 
     private fun goToMainActivity() {
         val mainActivityIntent = Intent(applicationContext, MainActivity::class.java)
         startActivity(mainActivityIntent)
+        finish()
+    }
+    private fun goToTestActivity() {
+        val testActivityIntent = Intent(applicationContext, Test::class.java)
+        startActivity(testActivityIntent)
         finish()
     }
 }
