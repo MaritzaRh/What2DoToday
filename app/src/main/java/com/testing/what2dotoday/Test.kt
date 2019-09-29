@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.LinearLayout.VERTICAL
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.activity_test.*
 
 class Test : AppCompatActivity() {
 
@@ -15,6 +16,7 @@ class Test : AppCompatActivity() {
         setContentView(R.layout.activity_test)
 
 
+        questionText.text = "ElIGE UN  PAISAJE"
         val recyclerView = findViewById(R.id.activity_test_recyclerView)  as RecyclerView
         recyclerView.layoutManager = LinearLayoutManager(this, VERTICAL, false)
 
@@ -25,5 +27,6 @@ class Test : AppCompatActivity() {
 
         val  adapter = TestAdapter(rows)
         recyclerView.adapter = adapter
+
     }
 }

@@ -14,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Test"></activity>
+        <activity android:name=".Places"></activity>
+        <activity android:name=".Test" />
         <activity
             android:name=".SplashScreenActivity"
             android:noHistory="true"

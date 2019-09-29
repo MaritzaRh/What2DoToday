@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+
+    >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,7 +15,7 @@
             android:orientation="vertical"
             xmlns:card_view="http://schemas.android.com/apk/res-auto"
             card_view:cardCornerRadius="15dp"
-            card_view:cardBackgroundColor="#BDBDBD"
+            card_view:cardBackgroundColor="@color/colorSplashScreen"
             android:clickable="true"
             >
             <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
@@ -22,7 +24,6 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="123dp"
-                    android:paddingHorizontal="0dp"
                     android:src="@drawable/mountain"
                     android:scaleType="fitXY"
                     android:id="@+id/answerL"/>
@@ -35,7 +36,7 @@
             android:orientation="vertical"
             xmlns:card_view="http://schemas.android.com/apk/res-auto"
             card_view:cardCornerRadius="15dp"
-            card_view:cardBackgroundColor="#BDBDBD"
+            card_view:cardBackgroundColor="@color/colorSplashScreen"
             android:clickable="true"
             >
             <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
@@ -46,7 +47,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="123dp"
                     android:src="@drawable/mountain"
-                    android:paddingHorizontal="0dp"
                     android:id="@+id/answerR"
                     android:scaleType="fitXY"
                     />

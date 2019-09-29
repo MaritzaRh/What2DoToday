@@ -26,7 +26,7 @@ class SplashScreenActivity : AppCompatActivity() {
         finish()
     }
     private fun goToTestActivity() {
-        val testActivityIntent = Intent(applicationContext, Test::class.java)
+        val testActivityIntent = Intent(applicationContext, Places::class.java)
         startActivity(testActivityIntent)
         finish()
     }
