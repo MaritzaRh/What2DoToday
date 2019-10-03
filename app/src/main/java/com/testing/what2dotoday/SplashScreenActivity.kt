@@ -4,7 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-
+import com.testing.what2dotoday.MainActivity
+import com.testing.what2dotoday.Test
 class SplashScreenActivity : AppCompatActivity() {
     private val splashTime = 2000L
     private lateinit var myhandler: Handler
@@ -26,7 +27,7 @@ class SplashScreenActivity : AppCompatActivity() {
         finish()
     }
     private fun goToTestActivity() {
-        val testActivityIntent = Intent(applicationContext, Places::class.java)
+        val testActivityIntent = Intent(applicationContext, Test::class.java)
         startActivity(testActivityIntent)
         finish()
     }
