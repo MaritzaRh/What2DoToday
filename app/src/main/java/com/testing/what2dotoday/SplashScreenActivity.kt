@@ -16,7 +16,8 @@ class SplashScreenActivity : AppCompatActivity() {
 
         myhandler = Handler()
         myhandler.postDelayed({
-            goToSignInActivity()
+            //goToSignInActivity()
+            goToTestActivity()
         },splashTime)
     }
 
