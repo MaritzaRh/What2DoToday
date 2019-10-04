@@ -16,14 +16,13 @@ class SplashScreenActivity : AppCompatActivity() {
 
         myhandler = Handler()
         myhandler.postDelayed({
-            //goToMainActivity()
-            goToTestActivity()
+            goToSignInActivity()
         },splashTime)
     }
 
-    private fun goToMainActivity() {
-        val mainActivityIntent = Intent(applicationContext, MainActivity::class.java)
-        startActivity(mainActivityIntent)
+    private fun goToSignInActivity() {
+        val signInActivityIntent = Intent(applicationContext, SignInActivity::class.java)
+        startActivity(signInActivityIntent)
         finish()
     }
     private fun goToTestActivity() {

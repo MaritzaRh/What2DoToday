@@ -5,9 +5,7 @@
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission#VIBRATE" />
-
-    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -17,8 +15,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".SignInActivity" />
         <activity android:name=".Places"></activity>
-        <activity android:name=".Test" />
+        <activity android:name=".Test"/>
         <activity
             android:name=".SplashScreenActivity"
             android:noHistory="true"

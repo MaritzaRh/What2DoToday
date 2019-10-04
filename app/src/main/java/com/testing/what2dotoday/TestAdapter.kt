@@ -72,11 +72,12 @@ class TestAdapter(val answerList: ArrayList<TestRowModel>, val TestActivity:Test
         var bottomLeftImage = itemView.findViewById(R.id.answerBL) as ImageView
         var bottomRightImage = itemView.findViewById(R.id.answerBR) as ImageView
     }
+    /*
     @RequiresApi(Build.VERSION_CODES.O)
     fun vibratePhone(){
         val effect: VibrationEffect1 = VibrationEffect1.createOneShot(1000, VibrationEffect1.DEFAULT_AMPLITUDE);
         vibrator.vibrate(effect)
-    }
+    } */
     @SuppressLint("WrongConstant")
     fun refresh(){
         TestActivity.question.text = "Cambie de texto"
@@ -102,10 +103,8 @@ class TestAdapter(val answerList: ArrayList<TestRowModel>, val TestActivity:Test
         //vibratePhone()
         val text = "Presionaste: " + buttonIndex
         val duration = Toast.LENGTH_SHORT
-
         val toast = Toast.makeText(TestActivity, text, duration)
         toast.show()
-
         myhandler.postDelayed({
             refresh()
         },splashTime)
